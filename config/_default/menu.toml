@@ -1,11 +1,11 @@
 # Configure main menu and social menu
 #[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
+#identifier = "portfolio"
+#name = "Portfolio"
+#url = "/portfolio"
 #[main.params]
 #icon = "home"
-#newtab = true
+#newtab = false
 
 [[social]]
 identifier = "github"

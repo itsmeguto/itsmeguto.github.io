@@ -1,6 +1,6 @@
 ---
 title: Data Analysis
-description: Systematic process of inspecting, cleaning, and interpreting data to uncover insights for decision-making
+description: Systematic process of inspecting, cleaning, and interpreting data to uncover insights for decision-making 
 image:
 
 # Badge style

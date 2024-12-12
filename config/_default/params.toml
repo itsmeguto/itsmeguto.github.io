@@ -9,12 +9,12 @@ since = 2021
 customText = ""
 
 [dateFormat]
-published = "Dec 02, 2024"
+published = "Dec 12, 2024"
 lastUpdated = "Dec 12, 2024 15:04 MST"
 
 [sidebar]
-emoji = "🍥"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+emoji = "😃"
+subtitle = "Bachelor in Information Systems from PUC-Campinas, enthusiastic about data and technology, and trends in the area. Dynamic and with ease for interpersonal communication. Sports fanatic."
 
 [sidebar.avatar]
 enabled = true

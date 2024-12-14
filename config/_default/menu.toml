@@ -22,3 +22,11 @@ url = "https://twitter.com/itsmeguto17"
 
 [social.params]
 icon = "brand-twitter"
+
+[[main]]
+identifier = "resume"
+name = "Resumé"
+url = "/resume"
+[main.params]
+icon = "user"
+newtab = false

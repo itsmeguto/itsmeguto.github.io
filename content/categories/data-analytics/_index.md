@@ -1,5 +1,5 @@
 ---
-title: Data Analysis
+title: Data Analytics
 description: Systematic process of inspecting, cleaning, and interpreting data to uncover insights for decision-making 
 image:
 

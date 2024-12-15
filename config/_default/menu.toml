@@ -24,9 +24,9 @@ url = "https://twitter.com/itsmeguto17"
 icon = "brand-twitter"
 
 [[main]]
-identifier = "resume"
+identifier = "view-resume"
 name = "Resumé"
-url = "/resume"
+url = "/view-resume/"
 [main.params]
 icon = "user"
 newtab = false

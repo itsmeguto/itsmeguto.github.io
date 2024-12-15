@@ -14,5 +14,7 @@ hasCJKLanguage = false
 # Change it to your Disqus shortname before using
 disqusShortname = "itsmeguto"
 
+cacheDir = "/workspaces/itsmeguto.github.io/cache"
+
 [pagination]
 pagerSize = 5

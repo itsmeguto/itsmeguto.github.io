@@ -1,0 +1,36 @@
+{{ define "main" }}
+    {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
+    {{ $filtered := ($pages | intersect $notHidden) }}
+    {{ $pag := .Paginate ($filtered) }}
+    <style>
+        .white-box {
+            background-color: white;
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+    <section class="article-list">
+        <div class="white-box">
+            <h1>👋 Hey, I'm Your Name!</h1>
+            <p>I'm an Agile Expert with a strong background in information systems and a passion for empowering teams..</p>
+            <p>With over 10 years of experience, I've transitioned from a support analyst to Scrum Master and Agile Coach, helping teams deliver value effectively. Currently, I work at adidas, focusing on guiding product teams to achieve their goals and successfully deliver impactful programs.</p>
+            <p>I'm dedicated to continuous learning and have earned certifications in data analytics and engineering, including Google Data Analytics Specialization and IBM's Data Science Specialization. Right now, I'm also pursuing an MBA in People Management because I believe that people are the heart of every organization.</p>
+        </div>
+    </section> 
+    <section class="article-list">
+        {{ range $index, $element := $pag.Pages }}
+            {{ partial "article-list/default" . }}
+        {{ end }}
+    </section>
+
+    {{- partial "pagination.html" . -}}
+    {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+    {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}
